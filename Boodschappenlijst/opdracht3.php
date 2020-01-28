@@ -6,13 +6,7 @@
  * Time: 09:16
  */
 $boodschappen = ["aardappelen", "aardbeien", "3 pakken melk", "yoghurt"];
-
-
-
-
-
 ?>
-
 
 <!doctype html>
 <html lang="en">
@@ -24,16 +18,14 @@ $boodschappen = ["aardappelen", "aardbeien", "3 pakken melk", "yoghurt"];
     <title>Document</title>
 </head>
 <body>
-
 <div >
     <h3>Wat moet ik kopen:</h3>
-    <ul>
+    <ul style="text-align: center">
         <?php
         for ($i = 0; $i <4; $i++) {
-            echo "<li>$boodschappen[$i]</li>";
+            echo "<li>$boodschappen[$i]</li>". "<img src='IMG/$i.jpg'>";
         }
         ?>
-
     </ul>
 </div>
 </body>
